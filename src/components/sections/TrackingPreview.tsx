@@ -38,7 +38,7 @@ export function TrackingPreview() {
                 <span className="text-sm font-medium bg-[#E2EADF] text-[#182D18] px-2 py-1 rounded">Activo</span>
               </div>
               
-              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-[#182D18] before:via-[#182D18] before:to-gray-200">
+              <div className="space-y-6 relative before:absolute before:inset-0 before:ml-[11px] before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-[#182D18] before:via-[#182D18] before:to-gray-200">
                 {statuses.map((status, i) => (
                   <div key={i} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
                     <div className="flex items-center w-full">
