@@ -67,18 +67,20 @@ export function Header() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-[#FAF9F4] border-b border-[#182D18]/10 shadow-lg py-4 px-4 flex flex-col gap-4">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              href={link.href}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="text-base font-medium text-[#282824] hover:text-[#546E52] p-2"
-            >
-              {link.name}
-            </Link>
-          ))}
-          <Button asChild className="w-full mt-2">
+        <div className="md:hidden fixed top-20 left-0 w-full h-[calc(100vh-5rem)] bg-[#FAF9F4] shadow-xl overflow-y-auto z-40 py-6 px-4 flex flex-col gap-6">
+          <div className="flex flex-col gap-2">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="text-lg font-medium text-[#282824] hover:text-[#546E52] p-3 rounded-lg hover:bg-[#182D18]/5 transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+          <Button asChild className="w-full mt-auto mb-8 h-14 text-base">
             <a href={getDefaultWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
               Pedir por WhatsApp
             </a>

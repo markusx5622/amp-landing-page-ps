@@ -11,18 +11,18 @@ export function CuratedCatalog() {
   ];
 
   return (
-    <section id="catalogo" className="py-20 bg-white border-y border-[#182D18]/5">
+    <section id="catalogo" className="py-12 md:py-20 bg-white border-y border-[#182D18]/5">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+            <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
               Selecciones pensadas para ti
             </h2>
             <p className="text-lg text-[#546E52]">
               No tienes que saber exactamente qué comprar. También puedes inspirarte con selecciones de productos, ofertas y recomendaciones desde España.
             </p>
           </div>
-          <Button variant="outline" className="shrink-0" asChild>
+          <Button variant="outline" className="shrink-0 w-full md:w-auto" asChild>
             <a href={getCatalogWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
               Pedir catálogo por WhatsApp
             </a>

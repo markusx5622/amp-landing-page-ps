@@ -35,10 +35,10 @@ export function Categories() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+          <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
             ¿Qué puedes pedir?
           </h2>
           <p className="text-lg text-[#546E52] max-w-2xl mx-auto">
@@ -50,7 +50,7 @@ export function Categories() {
           {categories.map((cat, i) => {
             const Icon = cat.icon;
             return (
-              <div key={i} className="group bg-[#F4F2E8] rounded-[20px] p-8 border border-[#182D18]/5 transition-all hover:-translate-y-2 hover:shadow-lg hover:bg-[#E2EADF]/30">
+              <div key={i} className="group bg-[#F4F2E8] rounded-[20px] p-6 md:p-8 border border-[#182D18]/5 transition-all hover:-translate-y-2 hover:shadow-lg hover:bg-[#E2EADF]/30">
                 <div className="w-14 h-14 rounded-full bg-white text-[#182D18] flex items-center justify-center mb-6 shadow-sm group-hover:scale-110 transition-transform">
                   <Icon size={28} strokeWidth={1.5} />
                 </div>

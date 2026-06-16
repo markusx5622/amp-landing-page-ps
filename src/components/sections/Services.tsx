@@ -59,10 +59,10 @@ export function Services() {
   ];
 
   return (
-    <section id="servicios" className="py-20 bg-[#FAF9F4]">
+    <section id="servicios" className="py-12 md:py-20 bg-[#FAF9F4]">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+          <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
             Servicios diseñados según el tipo de pedido
           </h2>
         </div>
@@ -71,7 +71,7 @@ export function Services() {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className={`rounded-[24px] p-8 border ${
+              className={`rounded-[24px] p-6 md:p-8 border ${
                 service.highlight 
                   ? "bg-[#182D18] text-white border-[#182D18] shadow-xl lg:-translate-y-4" 
                   : "bg-white text-[#282824] border-[#182D18]/10 shadow-sm hover:shadow-md"
@@ -107,7 +107,7 @@ export function Services() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" asChild>
+          <Button size="lg" className="w-full sm:w-auto" asChild>
             <a href={getDefaultWhatsAppUrl()} target="_blank" rel="noopener noreferrer">
               Quiero saber qué servicio me conviene
             </a>

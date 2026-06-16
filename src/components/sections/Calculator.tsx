@@ -32,9 +32,9 @@ export function Calculator() {
   };
 
   return (
-    <section className="py-20 bg-[#E2EADF]">
+    <section className="py-12 md:py-20 bg-[#E2EADF]">
       <div className="container mx-auto px-4 max-w-5xl">
-        <div className="bg-white rounded-[32px] p-8 md:p-12 shadow-xl border border-[#182D18]/5">
+        <div className="bg-white rounded-[32px] p-5 sm:p-8 md:p-12 shadow-xl border border-[#182D18]/5">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             
             {/* Form */}
@@ -43,7 +43,7 @@ export function Calculator() {
                 <div className="w-10 h-10 rounded-full bg-[#182D18] text-white flex items-center justify-center">
                   <CalculatorIcon size={20} />
                 </div>
-                <h2 className="text-3xl font-bold text-[#182D18]">
+                <h2 className="text-[28px] leading-tight md:text-3xl font-bold text-[#182D18] text-balance">
                   Calcula una estimación rápida
                 </h2>
               </div>
@@ -93,7 +93,7 @@ export function Calculator() {
             </div>
 
             {/* Result */}
-            <div className="bg-[#FAF9F4] rounded-[24px] p-8 border border-[#182D18]/10">
+            <div className="bg-[#FAF9F4] rounded-[24px] p-5 sm:p-8 border border-[#182D18]/10">
               <h3 className="text-xl font-bold text-[#182D18] mb-6 border-b border-[#182D18]/10 pb-4">
                 Resumen estimado
               </h3>

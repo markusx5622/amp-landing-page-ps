@@ -18,10 +18,10 @@ export function ProblemSolution() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-5xl">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+        <div className="text-center mb-10 md:mb-12">
+          <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
             Comprar en España desde Venezuela no debería ser complicado
           </h2>
           <p className="text-lg text-[#546E52] max-w-3xl mx-auto">
@@ -31,7 +31,7 @@ export function ProblemSolution() {
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {/* Lo que suele pasar */}
-          <div className="bg-[#FAF9F4] rounded-[24px] p-8 border border-[#182D18]/5">
+          <div className="bg-[#FAF9F4] rounded-[24px] p-6 md:p-8 border border-[#182D18]/5">
             <h3 className="text-xl font-bold text-[#282824] mb-6 flex items-center gap-2">
               <span className="text-red-500/80">Lo que suele pasar</span>
             </h3>
@@ -46,7 +46,7 @@ export function ProblemSolution() {
           </div>
 
           {/* Cómo lo resolvemos */}
-          <div className="bg-[#182D18] rounded-[24px] p-8 text-white shadow-xl relative overflow-hidden">
+          <div className="bg-[#182D18] rounded-[24px] p-6 md:p-8 text-white shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 -mr-16 -mt-16 w-64 h-64 bg-[#546E52] rounded-full opacity-20 blur-3xl"></div>
             <h3 className="text-xl font-bold text-[#F4F2E8] mb-6 flex items-center gap-2 relative z-10">
               <span className="text-[#E2EADF]">Cómo lo resolvemos</span>

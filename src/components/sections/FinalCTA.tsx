@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function FinalCTA() {
   return (
-    <section className="py-24 bg-[#182D18] text-center relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[#182D18] text-center relative overflow-hidden">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl overflow-hidden pointer-events-none">
         <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[150%] bg-[#546E52] rounded-full opacity-20 blur-[100px]"></div>
@@ -16,10 +16,10 @@ export function FinalCTA() {
              <img src="/logo-ari-personal-shopper.JPG" alt="Logo" className="w-full h-full object-cover rounded-full" />
           </div>
         </div>
-        <h2 className="text-4xl md:text-5xl font-bold text-[#F4F2E8] mb-6 tracking-tight">
+        <h2 className="text-[32px] leading-tight md:text-5xl font-bold text-[#F4F2E8] mb-4 md:mb-6 tracking-tight text-balance">
           ¿Lista para cotizar tu pedido desde España?
         </h2>
-        <p className="text-xl text-[#E2EADF]/90 mb-10 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-lg md:text-xl text-[#E2EADF]/90 mb-8 md:mb-10 max-w-2xl mx-auto leading-relaxed text-balance">
           Envíame lo que quieres comprar y te ayudo a revisar disponibilidad, precio y opciones de envío.
         </p>
         

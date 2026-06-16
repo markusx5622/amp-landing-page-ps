@@ -3,13 +3,13 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-[#FAF9F4] py-16 md:py-24">
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative overflow-hidden bg-[#FAF9F4] py-10 md:py-20 lg:py-24">
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-12 items-center">
         <div className="flex flex-col items-start gap-6 max-w-2xl">
           <div className="inline-flex items-center rounded-full bg-[#E2EADF] px-3 py-1 text-sm font-medium text-[#182D18]">
             Base en Valencia • Pedidos a Venezuela
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#182D18]">
+          <h1 className="text-[32px] leading-tight sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#182D18] text-balance">
             Compra en España desde Venezuela con una personal shopper de confianza
           </h1>
           <p className="text-lg text-[#282824]/80 leading-relaxed">

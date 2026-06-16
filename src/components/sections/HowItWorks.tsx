@@ -40,10 +40,10 @@ export function HowItWorks() {
   ];
 
   return (
-    <section id="como-funciona" className="py-20 bg-[#FAF9F4]">
+    <section id="como-funciona" className="py-12 md:py-20 bg-[#FAF9F4]">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+          <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
             Cómo funciona el servicio
           </h2>
           <p className="text-lg text-[#546E52] max-w-2xl mx-auto">
@@ -75,7 +75,7 @@ export function HowItWorks() {
 
                   {/* Content Card */}
                   <div className={`w-full pl-16 pr-4 md:w-5/12 md:px-0 py-4 ${isEven ? 'md:text-left' : 'md:text-right'}`}>
-                    <div className={`bg-white p-6 rounded-[20px] shadow-sm border border-[#182D18]/5 transition-all hover:shadow-md ${isEven ? 'md:ml-auto' : 'md:mr-auto'}`}>
+                    <div className={`bg-white p-5 md:p-6 rounded-[20px] shadow-sm border border-[#182D18]/5 transition-all hover:shadow-md ${isEven ? 'md:ml-auto' : 'md:mr-auto'}`}>
                       <div className={`flex items-center gap-3 mb-3 ${isEven ? '' : 'md:flex-row-reverse'}`}>
                         <div className="w-10 h-10 rounded-full bg-[#E2EADF] text-[#182D18] flex items-center justify-center shrink-0">
                           <Icon size={20} />

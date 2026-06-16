@@ -12,13 +12,13 @@ export function TrackingPreview() {
   ];
 
   return (
-    <section className="py-20 bg-white border-y border-[#182D18]/5">
+    <section className="py-12 md:py-20 bg-white border-y border-[#182D18]/5">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           
           {/* Content */}
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-6">
+            <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-6 text-balance">
               Seguimiento claro en cada etapa
             </h2>
             <p className="text-lg text-[#546E52] mb-8">
@@ -32,7 +32,7 @@ export function TrackingPreview() {
 
           {/* Tracking Card */}
           <div className="w-full md:w-1/2">
-            <div className="bg-[#FAF9F4] rounded-[24px] p-6 md:p-8 shadow-sm border border-[#182D18]/10 max-w-md mx-auto">
+            <div className="bg-[#FAF9F4] rounded-[24px] p-5 md:p-8 shadow-sm border border-[#182D18]/10 max-w-md mx-auto">
               <div className="font-bold text-[#182D18] mb-6 border-b border-[#182D18]/10 pb-4 flex justify-between items-center">
                 <span>Pedido #00452</span>
                 <span className="text-sm font-medium bg-[#E2EADF] text-[#182D18] px-2 py-1 rounded">Activo</span>

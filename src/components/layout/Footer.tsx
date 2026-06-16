@@ -4,7 +4,7 @@ import { getDefaultWhatsAppUrl } from "@/lib/whatsapp";
 
 export function Footer() {
   return (
-    <footer className="bg-[#182D18] text-[#F4F2E8] py-12">
+    <footer className="bg-[#182D18] text-[#F4F2E8] py-10 md:py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-2">
           <h2 className="text-xl font-bold mb-4">{siteConfig.name}</h2>
@@ -16,16 +16,16 @@ export function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-4 text-[#FAF9F4]">Enlaces</h3>
           <ul className="space-y-2">
-            <li><Link href="#como-funciona" className="text-[#E2EADF] hover:text-white transition-colors">Cómo funciona</Link></li>
-            <li><Link href="#servicios" className="text-[#E2EADF] hover:text-white transition-colors">Servicios</Link></li>
-            <li><Link href="#faq" className="text-[#E2EADF] hover:text-white transition-colors">FAQ</Link></li>
+            <li><Link href="#como-funciona" className="inline-block py-2 text-[#E2EADF] hover:text-white transition-colors">Cómo funciona</Link></li>
+            <li><Link href="#servicios" className="inline-block py-2 text-[#E2EADF] hover:text-white transition-colors">Servicios</Link></li>
+            <li><Link href="#faq" className="inline-block py-2 text-[#E2EADF] hover:text-white transition-colors">FAQ</Link></li>
             <li>
-              <a href={getDefaultWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="text-[#E2EADF] hover:text-white transition-colors">
+              <a href={getDefaultWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="inline-block py-2 text-[#E2EADF] hover:text-white transition-colors">
                 WhatsApp
               </a>
             </li>
             <li>
-              <a href={`https://instagram.com/${siteConfig.instagramHandle.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="text-[#E2EADF] hover:text-white transition-colors">
+              <a href={`https://instagram.com/${siteConfig.instagramHandle.replace("@", "")}`} target="_blank" rel="noopener noreferrer" className="inline-block py-2 text-[#E2EADF] hover:text-white transition-colors">
                 Instagram
               </a>
             </li>

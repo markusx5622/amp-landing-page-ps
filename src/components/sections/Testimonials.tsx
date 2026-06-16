@@ -18,10 +18,10 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-20 bg-[#FAF9F4]">
+    <section className="py-12 md:py-20 bg-[#FAF9F4]">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+          <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
             Lo que dicen quienes ya compraron
           </h2>
           <p className="text-sm text-[#546E52] max-w-md mx-auto italic">
@@ -31,7 +31,7 @@ export function Testimonials() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((test, i) => (
-            <div key={i} className="bg-white rounded-[24px] p-8 shadow-sm border border-[#182D18]/5 flex flex-col relative">
+            <div key={i} className="bg-white rounded-[24px] p-6 md:p-8 shadow-sm border border-[#182D18]/5 flex flex-col relative">
               <div className="text-4xl text-[#E2EADF] font-serif absolute top-4 left-6">"</div>
               <p className="text-[#282824] leading-relaxed mb-8 mt-4 relative z-10 italic">
                 {test.text}

@@ -28,10 +28,10 @@ export function WhatsAppOrderForm() {
   };
 
   return (
-    <section id="cotizar" className="py-20 bg-white">
+    <section id="cotizar" className="py-12 md:py-20 bg-white">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#182D18] mb-4">
+          <h2 className="text-[28px] leading-tight md:text-4xl font-bold text-[#182D18] mb-4 text-balance">
             Pide tu cotización de forma ordenada
           </h2>
           <p className="text-lg text-[#546E52] max-w-2xl mx-auto">
@@ -39,7 +39,7 @@ export function WhatsAppOrderForm() {
           </p>
         </div>
 
-        <div className="bg-[#FAF9F4] rounded-[32px] p-8 md:p-12 shadow-sm border border-[#182D18]/10">
+        <div className="bg-[#FAF9F4] rounded-[32px] p-5 sm:p-8 md:p-12 shadow-sm border border-[#182D18]/10">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>

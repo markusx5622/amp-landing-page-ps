@@ -11,11 +11,11 @@ export function TrustSection() {
   ];
 
   return (
-    <section id="confianza" className="py-20 bg-[#182D18] text-white">
+    <section id="confianza" className="py-12 md:py-20 bg-[#182D18] text-white">
       <div className="container mx-auto px-4 max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#F4F2E8]">
+            <h2 className="text-[28px] leading-tight md:text-4xl font-bold mb-6 text-[#F4F2E8] text-balance">
               Compra con claridad, no a ciegas
             </h2>
             <p className="text-lg text-[#E2EADF]/90 mb-8 leading-relaxed">
@@ -29,7 +29,7 @@ export function TrustSection() {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-[24px] p-8 border border-white/10">
+          <div className="bg-white/5 backdrop-blur-sm rounded-[24px] p-6 md:p-8 border border-white/10">
             <ul className="space-y-5">
               {points.map((point, i) => (
                 <li key={i} className="flex items-start gap-3">
