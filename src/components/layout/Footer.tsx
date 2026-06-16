@@ -35,9 +35,37 @@ export function Footer() {
         <div>
           <h3 className="font-semibold text-lg mb-4 text-[#FAF9F4]">Contacto</h3>
           <ul className="space-y-2 text-[#E2EADF]">
-            <li>WhatsApp: {siteConfig.whatsappNumber}</li>
-            <li>Instagram: {siteConfig.instagramHandle}</li>
-            <li>Email: {siteConfig.email}</li>
+            <li>
+              WhatsApp:{" "}
+              <a
+                href={getDefaultWhatsAppUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline hover:text-white transition-colors"
+              >
+                {siteConfig.whatsappNumberFormatted}
+              </a>
+            </li>
+            <li>
+              Instagram:{" "}
+              <a
+                href={`https://instagram.com/${siteConfig.instagramHandle.replace("@", "")}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline hover:text-white transition-colors"
+              >
+                {siteConfig.instagramHandle}
+              </a>
+            </li>
+            <li>
+              Email:{" "}
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="hover:underline hover:text-white transition-colors"
+              >
+                {siteConfig.email}
+              </a>
+            </li>
           </ul>
         </div>
       </div>

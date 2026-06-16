@@ -1,7 +1,8 @@
 export const siteConfig = {
   name: "Personal Shopper Arianna Malandrino",
-  whatsappNumber: "34600000000", // TODO: Update with actual WhatsApp number
-  instagramHandle: "@arianna.shopper", // TODO: Update with actual Instagram handle
+  whatsappNumber: "34633033907",
+  whatsappNumberFormatted: "+34 633 03 39 07",
+  instagramHandle: "@arianna.shopper",
   email: "contacto@ariannashopper.com", // TODO: Update with actual Email
   baseCity: "Valencia, España",
   targetCountry: "Venezuela",
